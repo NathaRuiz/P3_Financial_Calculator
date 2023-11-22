@@ -44,17 +44,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .btn_calculator_row{
     width: 100%;
-    min-height: 11vh;
-    background-color: inherit;
+    min-height: 9.2vh;
     display: flex;
     justify-content: space-between;
 }
 .btn{
-    width: 24%;
+    width: 22%;
     font-size: 30px;
     font-weight: 500;
     border:none;
@@ -72,4 +72,7 @@ body{
     background-color: rgb(255, 68, 0) ;
 }
 
+.btn:not(#btn_equal):hover{
+    background-color: rgb(10, 10, 10);
+}
 
