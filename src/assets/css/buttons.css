@@ -1,0 +1,39 @@
+@import url(/src/assets/css/global.css);
+
+#btn_calculator{
+    width: 90%;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_calculator_row{
+    width: 100%;
+    min-height: 9.2vh;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: 22%;
+    font-size: 30px;
+    font-weight: 500;
+    border:none;
+    border-radius: 50%;
+    background-color: inherit;
+    color: var(--color-numbers);
+}
+.btn_not_number{
+    color: var(--color-buttons-not-number);
+    font-weight: 600;
+} 
+
+#btn_equal{
+    color: var(--color-numbers);
+    background-color: var(--color-buttons-not-number);
+}
+
+.btn:not(#btn_equal):hover{
+    background-color: var(--background-buttons-hover);
+}

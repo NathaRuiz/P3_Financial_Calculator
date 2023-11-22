@@ -1,0 +1,85 @@
+@import url(/src/assets/css/global.css);
+
+@media (min-width:450px){
+    .btn{
+        font-size: 40px;
+        border-radius: 0;
+    }
+}
+
+@media (min-width:1024px) and (min-height:300px){
+
+    body{
+        display: flex;
+        justify-content: center;
+        padding-top: 1%;
+    }
+
+    #calculator{
+        width:700px;
+        min-height:20vh;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        border-radius: 10px;
+        box-shadow:  15px 15px 0px var(--color-buttons-not-number);
+    }
+    #operands{
+        min-height: 30vh;
+        width: 90%;
+        font-size: 30px;
+    }
+    #operand_1{
+        font-size: 20px;
+    }
+    #btn_calculator{
+        min-height:30vh;
+    }
+    .btn{
+        width: 22%;
+        font-size: 20px;
+        font-weight: 500;
+        border:none;
+        border-radius:none;
+        color:var(--color-numbers);
+    }
+    .btn_not_number{
+        color: var(--color-buttons-not-number);
+        font-weight: 600;
+    } 
+    
+} 
+/* nest hub */
+ @media (min-width:1024px) and (min-height:600px){
+    body{
+        padding-top: 3%;
+    }
+    #calculator{
+        width:500px;
+    }
+    #operands{
+        min-height: 20vh;
+    }
+ }
+    
+/* ipad pro */
+ @media (min-width:1024px) and (min-height:1000px){
+    #calculator{
+        width:600px;
+        min-height:20vh;
+    }
+    #operands{
+        min-height: 20vh;
+        font-size: 60px;
+    }
+    #operand_1{
+        font-size: 30px;
+    }
+    
+    #btn_calculator{
+        min-height:30vh;
+    }
+    .btn{
+        font-size: 40px;
+    }
+} 
+ 
