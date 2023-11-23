@@ -51,7 +51,7 @@
     }
     
 } 
-/* nest hub */
+
  @media (min-width:1024px) and (min-height:600px){
     body{
         padding-top: 3%;
@@ -67,7 +67,7 @@
     }
  }
     
-/* ipad pro */
+
  @media (min-width:1024px) and (min-height:1000px){
     #calculator{
         width:600px;

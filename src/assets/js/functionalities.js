@@ -3,9 +3,6 @@ const operand2_element = document.querySelector("#operand_2");
 
 const buttons = document.querySelectorAll(".btn");
 
-// let sqrt = document.querySelector("#btn_sqrt");
-// let symbol_sqrt ="";
-
 buttons.forEach(button => {
     button.addEventListener("click",() =>{
         const button_click = button.textContent;
@@ -30,13 +27,6 @@ buttons.forEach(button => {
             return;
         }
 
-        // if(button.id === "btn_"){
-        //     // operand1_element.textContent = Math.sqrt(operand1_element.textContent);
-        //     // operand1_element.textContent.length[-1];
-        //     // console.log(operand1_element.textContent.length[-1]);
-        //    // sqrt.textContent = Math.sqrt(operand1_element.textContent += button_click);
-            
-        // }
 
         if(button.id === "btn_equal"){
             try{
