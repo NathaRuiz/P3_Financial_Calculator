@@ -34,6 +34,10 @@
     background-color: var(--color-buttons-not-number);
 }
 
+.agrup{
+    width: 11%;
+}
+
 .btn:not(#btn_equal):hover{
     background-color: var(--background-buttons-hover);
 }

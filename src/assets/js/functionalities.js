@@ -3,6 +3,9 @@ const operand2_element = document.querySelector("#operand_2");
 
 const buttons = document.querySelectorAll(".btn");
 
+// let sqrt = document.querySelector("#btn_sqrt");
+// let symbol_sqrt ="";
+
 buttons.forEach(button => {
     button.addEventListener("click",() =>{
         const button_click = button.textContent;
@@ -14,22 +17,31 @@ buttons.forEach(button => {
         }
 
         if(button.id === "btn_delete" ){
-            if(operand1_element.textContent.length === 1 || operand2_element.textContent === "Error!!"){
+            if(operand1_element.textContent.length === 1){
                 operand1_element.textContent = "0";
+                operand2_element.textContent = "0";
             }
             else{
                 operand1_element.textContent =  operand1_element.textContent.slice(0, -1);
+                 if(operand2_element.textContent === "Error!!"){
+                    operand2_element.textContent =  eval(operand1_element.textContent);
+                 }
             }
             return;
         }
 
-        if(button.id === "btn_sqrt"){
+        // if(button.id === "btn_"){
+        //     // operand1_element.textContent = Math.sqrt(operand1_element.textContent);
+        //     // operand1_element.textContent.length[-1];
+        //     // console.log(operand1_element.textContent.length[-1]);
+        //    // sqrt.textContent = Math.sqrt(operand1_element.textContent += button_click);
             
-        }
+        // }
 
         if(button.id === "btn_equal"){
             try{
                 operand2_element.textContent =  eval(operand1_element.textContent);
+
             }
             catch{
                 operand2_element.textContent = "Error!!";
@@ -38,9 +50,8 @@ buttons.forEach(button => {
             return;
         }
 
-        if(operand1_element.textContent === "0" || operand2_element.textContent === "Error!!" ){
+        if(operand1_element.textContent === "0" ){
             operand1_element.textContent = button_click;
-            operand2_element.textContent = "0";
         }
         else{
             operand1_element.textContent += button_click;

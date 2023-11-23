@@ -46,6 +46,9 @@
         color: var(--color-buttons-not-number);
         font-weight: 600;
     } 
+    .agrup{
+        width: 11%;
+    }
     
 } 
 /* nest hub */
@@ -58,6 +61,9 @@
     }
     #operands{
         min-height: 20vh;
+    }
+    .agrup{
+        width: 11%;
     }
  }
     
@@ -80,6 +86,9 @@
     }
     .btn{
         font-size: 40px;
+    }
+    .agrup{
+        width: 11%;
     }
 } 
  
